@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tutotial</title>
+    <link rel="stylesheet" href="./learn js style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/favicon_io/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- top nav bar code -->
+    <nav class="top-navbar">
+      <input type="checkbox" id="top-check" />
+      <label for="top-check" id="checkBtn"><i class="fa fa-bars"></i> </label>
+
+      <div class="logo-container">
+        <a href="../index.html">
+          <img
+            src="../images/kodecrown logos/green logo.png"
+            alt="KodeCrown logo"
+            id="logo"
+          />
+        </a>
+
+        <a href="../index.html" title="Home">
+          <img
+            src="../images/kodecrown logos/full logo.png"
+            alt="KodeCrown logo"
+            id="full-logo"
+          />
+        </a>
+      </div>
+      <div class="nav-align">
+        <div class="nav-links" id="topNav-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-links" id="signinBtn">
+          <ul>
+            <li>
+              <a href="../signin page/signin.html">
+                <i class="far fa-user-circle"></i>Sign in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- top navbar menu option bar -->
+      <div class="mobNavbar">
+        <div class="mobNavhead">
+          <input type="checkbox" id="top-check" />
+          <label for="top-check" id="checkBtn"
+            ><i class="fa fa-bars"></i>
+          </label>
+          <img
+            id="mobLogo"
+            src="../images/kodecrown logos/full logo.png"
+            alt="KodeCrown Logo"
+          />
+        </div>
+
+        <ul class="mobNavlinks">
+          <li class="mobActive">
+            <a href="../index.html">Home</a>
+          </li>
+          <li><a href="#link1">Courses</a></li>
+          <li><a href="#link2">Videos</a></li>
+          <li><a href="#link3">About</a></li>
+          <li><a href="#link4">Contact</a></li>
+        </ul>
+
+        <footer class="mobNav-footer">
+          <hr class="mobNav-hr" />
+          <a href="#help">Feedback</a> &#x2022;
+          <a href="#settings">Cookies </a> &#x2022;
+          <a href="#privacy">Privacy</a>
+        </footer>
+        <div
+          class="black-shade"
+          onclick="document.getElementById('top-check').click();"
+        ></div>
+      </div>
+    </nav>
+
+    <script>
+      const checkbox = document.getElementById("check");
+      const container = document.querySelector(".container");
+
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          container.style.display = "block";
+        } else {
+          container.style.display = "none";
+        }
+      });
+    </script>
+
+    <!-- subtop-navbar code -->
+    <nav class="subtop-navbar">
+      <ul>
+        <div>
+          <input type="checkbox" id="check" />
+          <label for="check" id="check-button"
+            ><i class="fa fa-bars"></i
+          ></label>
+        </div>
+        <li><a href="../learn html/html overview.html">HTML</a></li>
+        <li><a href="../learn css/what is css.html">CSS</a></li>
+        <li><a href="./what is js.html" class="active-sub">JAVASCRIPT</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- sidebar code -->
+      <div class="sidebar">
+        <h2>JS Introduction</h2>
+        <a target="_top" href="./what is js.html " class="active">
+          What is JS?
+        </a>
+        <a target="_top" href="#"> JS History </a>
+        <a target="_top" href="#"> JS Syntax </a>
+        <br />
+        <h2>JS Basics</h2>
+        <a target="_top" href="#"> Variables </a>
+        <a target="_top" href="#"> Operators </a>
+        <a target="_top" href="#"> Functions </a>
+        <br />
+        <h2>JS Advanced</h2>
+        <a target="_top" href="#"> Async JS </a>
+        <a target="_top" href="#"> Error Handling </a>
+        <a target="_top" href="#"> Browser APIs </a>
+        <br />
+        <h2>JS Frameworks</h2>
+        <a target="_top" href="#"> Intro to Libraries </a>
+        <a target="_top" href="#"> jQuery </a>
+        <a target="_top" href="#"> React </a>
+        <br />
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const check = document.getElementById("check");
+        const container = document.querySelector(".container");
+
+        check.addEventListener("change", () => {
+          if (window.innerWidth <= 992) {
+            container.style.display = check.checked ? "block" : "none";
+          }
+        });
+
+        // To initially hide the container if the screen width is below 992px
+        if (window.innerWidth <= 992) {
+          container.style.display = "none";
+        }
+
+        // To handle window resize event
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 992) {
+            container.style.display = "block";
+          } else {
+            container.style.display = check.checked ? "block" : "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

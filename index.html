@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KodeCrown</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/favicon_io/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="./index random bg.js"></script>
+  </head>
+  <body>
+    <!-- top nav bar code -->
+    <nav class="top-navbar">
+      <input type="checkbox" id="top-check" />
+      <label for="top-check" id="checkBtn"><i class="fa fa-bars"></i> </label>
+
+      <div class="logo-container">
+        <a href="./index.html">
+          <img
+            src="./images/kodecrown logos/green logo.png"
+            alt="KodeCrown logo"
+            id="logo"
+          />
+        </a>
+
+        <a href="./index.html" title="Home">
+          <img
+            src="./images/kodecrown logos/full logo.png"
+            alt="KodeCrown logo"
+            id="full-logo"
+          />
+        </a>
+      </div>
+      <div class="nav-align">
+        <div class="nav-links" id="topNav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./learn html/1html overview.html">Courses</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-links" id="signinBtn">
+          <ul>
+            <li>
+              <a href="./signin page/signin.html">
+                <i class="far fa-user-circle"></i
+                ><span class="signin">Sign in</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mobNavbar">
+        <div class="mobNavhead">
+          <input type="checkbox" id="top-check" />
+          <label for="top-check" id="checkBtn"
+            ><i class="fa fa-bars"></i>
+          </label>
+          <img
+            id="mobLogo"
+            src="./images/kodecrown logos/full logo.png"
+            alt="KodeCrown Logo"
+          />
+        </div>
+
+        <ul class="mobNavlinks">
+          <li class="mobActive">
+            <a href="./index.html">Home</a>
+          </li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#link2">Videos</a></li>
+          <li><a href="#link3">About</a></li>
+          <li><a href="#link4">Contact</a></li>
+        </ul>
+
+        <footer class="mobNav-footer">
+          <hr class="mobNav-hr" />
+          <a href="#help">Feedback</a> &#x2022;
+          <a href="#settings">Cookies </a> &#x2022;
+          <a href="#privacy">Privacy</a>
+        </footer>
+        <div
+          class="black-shade"
+          onclick="document.getElementById('top-check').click();"
+        ></div>
+      </div>
+    </nav>
+
+    <!-- home banner code -->
+    <div class="content-container">
+      <div class="head">
+        <h2>Welcome to KodeCrown</h2>
+        <p class="tagline">Your gateway to quality education</p>
+        <button
+          class="getStartBtn"
+          onclick="window.location.href='./signup page/signup.html'"
+        >
+          Get Started
+        </button>
+      </div>
+
+      <div class="webdev">
+        <h1>Learn web development</h1>
+        <p>
+          Welcome to the KodeCrown learning area. This set of articles aims to
+          provide complete beginners to web development with fundamental skills
+          for coding websites. The aim is not to take you from
+          <q>beginner</q> to <q>expert</q> but to take you from
+          <q>beginner</q> to <q>comfortable</q>. From there, you should be able
+          to start making your way, learning from the rest of KodeCrown, and
+          other intermediate to advanced resources that assume a lot of previous
+          knowledge.
+        </p>
+
+        <p>
+          If you are a complete beginner, web development can be challenging —
+          we will hold your hand and provide enough detail for you to feel
+          comfortable and learn the topics properly. You should feel at home
+          whether you are a student learning web development (on your own or as
+          part of a class), a teacher looking for class materials, a hobbyist,
+          or someone who just wants to understand more about how web
+          technologies work.
+        </p>
+
+        <h2>Where to start</h2>
+        <p>
+          If you are not sure about committing to learning web development
+          in-depth and want to begin with a taster session, we'd recommend that
+          you start by working through our Getting started with the web guides.
+          Beyond that, you should start by learning the following topics:
+        </p>
+
+        <h3>HTML and CSS</h3>
+        <p>
+          HTML provides structure for web content, whereas CSS provides
+          instructions to style and lay out that content. See
+          <a href="./learn html/html overview.html">HTML Overview</a> and
+          <a href="#">CSS first steps</a> for essential starter information.
+        </p>
+
+        <h3>JavaScript</h3>
+        <p>
+          JavaScript allows you to code interactive functionality on websites.
+          Begin with <a href="#">JavaScript first steps</a>.
+        </p>
+
+        <h3>Frameworks and tooling</h3>
+        <p>
+          After mastering the essentials of vanilla HTML, CSS, and JavaScript,
+          you should learn about client-side web development tools, and then
+          consider digging into client-side JavaScript frameworks. You should
+          also consider learning the basic concepts of server-side website
+          programming.
+        </p>
+
+        <h4>Looking to become a front-end web developer?</h4>
+        <p>
+          If you want to become a front-end web developer and are not sure what
+          to learn first, we'd suggest using the
+          <a href="./frontend roadmap.html" target="_blank">Roadmap</a> to plan
+          your learning. It provides a structured learning pathway covering the
+          essential skills and practices for being a successful front-end
+          developer, along with recommended learning resources.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

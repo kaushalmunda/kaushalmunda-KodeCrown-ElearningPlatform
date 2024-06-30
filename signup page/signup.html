@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KodeCrown</title>
+    <link rel="stylesheet" href="./signup.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/favicon_io/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <script src="./signup.js"></script>
+  </head>
+  <body>
+    <div class="signup-page">
+      <!-- website signup highlighted points -->
+      <div class="highlights">
+        <a href="../index.html" class="logo" id="logoPc">
+          <img
+            src="../images/kodecrown logos/green logo.png"
+            alt="KodeCrown logo"
+          />
+        </a>
+
+        <h2>Become a</h2>
+        <h2>Frontend Master &#128640;</h2>
+        <p>Free Access, Endless Possibilities</p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-check"></i> Comprehensive Resources
+          </li>
+          <li><i class="fa-solid fa-circle-check"></i> Video Tutorials</li>
+          <li><i class="fa-solid fa-circle-check"></i> Stay Updated</li>
+          <li><i class="fa-solid fa-circle-check"></i> Learn Anywhere</li>
+          <li><i class="fa-solid fa-circle-check"></i> Join Our Community</li>
+        </ul>
+      </div>
+
+      <!-- Sign up form code -->
+      <div class="signup-container-align">
+        <a href="../index.html" class="logo" id="logoMobile">
+          <img
+            src="../images/kodecrown logos/green logo.png"
+            alt="KodeCrown logo"
+          />
+        </a>
+
+        <div class="container-signup">
+          <div class="signup">
+            <h1>Sign up</h1>
+            <a href="../index.html"><span id="crossBtn">&#10005;</span></a>
+          </div>
+
+          <!-- email & password input field -->
+          <div class="signup-input">
+            <div class="fname-input">
+              <input type="text" id="fname" placeholder="First name" />
+            </div>
+            <div class="lname-input">
+              <input
+                type="text"
+                id="lname"
+                placeholder="Last name (optional)"
+              />
+            </div>
+            <div class="user-input">
+              <input type="email" id="user" placeholder="Email" />
+            </div>
+            <div class="password-input">
+              <input type="password" id="password" placeholder="Password" />
+              <button type="button" id="toggleBtn" onclick="togglePassword()">
+                Show
+              </button>
+            </div>
+            <div class="confirmPass-input">
+              <input
+                type="text"
+                id="confirmPass"
+                placeholder="Confirm password"
+              />
+            </div>
+
+            <!-- Validation Alert -->
+            <div class="validation-alert" id="fnameEmpty-alert">
+              <p><i class="fa-solid fa-circle-info"></i> Enter first name</p>
+            </div>
+
+            <div class="validation-alert" id="userEmpty-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Enter an email address
+              </p>
+            </div>
+
+            <div class="validation-alert" id="validEmail-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Please enter a valid
+                email address.
+              </p>
+            </div>
+
+            <div class="validation-alert" id="userMatch-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> That username is taken.
+                Try another.
+              </p>
+            </div>
+
+            <div class="validation-alert" id="passEmpty-alert">
+              <p><i class="fa-solid fa-circle-info"></i> Enter a password</p>
+            </div>
+
+            <div class="validation-alert" id="passCharCount-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Use 8 characters or more
+                for your password
+              </p>
+            </div>
+
+            <div class="validation-alert" id="confirmPassEmpty-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Confirm your password
+              </p>
+            </div>
+
+            <div class="validation-alert" id="passMatch-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Those passwords didn't
+                match. Try again.
+              </p>
+            </div>
+
+            <div class="validation-alert" id="strongPass-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Please choose a stronger
+                password. Try a mix of letters, numbers, and symbols.
+              </p>
+            </div>
+          </div>
+
+          <div class="signupBtn">
+            <button class="signup-button">Sign up</button>
+          </div>
+
+          <div class="signin-container">
+            <p class="signin">
+              Already have an account?
+              <a href="../signin page/signin.html" class="signin-link"
+                >Sign in</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code -->
+    <div class="foot-align">
+      <footer class="footer">
+        <div class="copy-container">
+          <p>
+            <img
+              src="../images/kodecrown logos/all white logo.png"
+              alt="KodeCrown logo"
+              id="footLogo"
+              class="footer-link"
+            />
+          </p>
+          <p id="copyright">&copy; 2024</p>
+        </div>
+        <div>
+          <a href="../legal/user agreement.html" class="footer-link"
+            >User Agreement</a
+          >
+        </div>
+        <div>
+          <a href="../legal/privacy policy.html" class="footer-link"
+            >Privacy Policy</a
+          >
+        </div>
+        <div>
+          <a href="../legal/community guidelines.html" class="footer-link"
+            >Community Guidelines</a
+          >
+        </div>
+        <div>
+          <a href="../legal/cookie policy.html" class="footer-link"
+            >Cookie Policy</a
+          >
+        </div>
+        <div>
+          <a href="../legal/copyright policy.html" class="footer-link"
+            >Copyright Policy</a
+          >
+        </div>
+        <div>
+          <a href="../legal/send feedback.html" class="footer-link"
+            >Send Feedback</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KodeCrown</title>
+    <link rel="stylesheet" href="./signin.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/favicon_io/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <script src="./signin.js"></script>
+  </head>
+  <body>
+    <div class="signin-page">
+      <!-- website signin highlighted points -->
+      <div class="highlights">
+        <a href="../index.html" class="logo" id="logoPc">
+          <img
+            src="../images/kodecrown logos/green logo.png"
+            alt="KodeCrown logo"
+          />
+        </a>
+
+        <h2>Become a</h2>
+        <h2>Frontend Master &#128640;</h2>
+        <p>Free Access, Endless Possibilities</p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-check"></i> Comprehensive Resources
+          </li>
+          <li><i class="fa-solid fa-circle-check"></i> Video Tutorials</li>
+          <li><i class="fa-solid fa-circle-check"></i> Stay Updated</li>
+          <li><i class="fa-solid fa-circle-check"></i> Learn Anywhere</li>
+          <li><i class="fa-solid fa-circle-check"></i> Join Our Community</li>
+        </ul>
+      </div>
+
+      <!-- Sign in form code -->
+      <div class="signin-container-align">
+        <a href="../index.html" class="logo" id="logoMobile">
+          <img
+            src="../images/kodecrown logos/green logo.png"
+            alt="KodeCrown logo"
+          />
+        </a>
+
+        <div class="container-signin">
+          <div class="signin">
+            <h1>Sign in</h1>
+            <a href="../index.html"><span id="crossBtn">&#10005;</span></a>
+          </div>
+
+          <!-- email & password input field -->
+          <div class="signin-input">
+            <div class="user-input">
+              <input type="email" id="user" placeholder="Email" />
+            </div>
+
+            <div class="password-input">
+              <input type="password" id="password" placeholder="Password" />
+              <button type="button" id="toggleBtn" onclick="togglePassword()">
+                Show
+              </button>
+            </div>
+
+            <!-- Validation Alert -->
+            <div class="validation-alert" id="emailEmpty">
+              <p><i class="fa-solid fa-circle-info"></i> Enter an email</p>
+            </div>
+
+            <div class="validation-alert" id="passEmpty-alert">
+              <p><i class="fa-solid fa-circle-info"></i> Enter a password</p>
+            </div>
+
+            <div class="validation-alert" id="wrongIdpass-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Sorry, looks like that's
+                the wrong email or password.
+              </p>
+            </div>
+
+            <div class="validation-alert" id="wrongPass-alert">
+              <p>
+                <i class="fa-solid fa-circle-info"></i> Wrong password. Try
+                again or click Forgot password to reset it.
+              </p>
+            </div>
+          </div>
+
+          <div class="forgotPass-container">
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+
+          <div class="signinBtn">
+            <button class="signin-button">Sign in</button>
+          </div>
+
+          <div class="signup-container">
+            <p class="signup">
+              Don't have an account?
+              <a href="../signup page/signup.html" class="signup-link"
+                >Sign up</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code -->
+    <div class="foot-align">
+      <footer class="footer">
+        <div class="copy-container">
+          <p>
+            <img
+              src="../images/kodecrown logos/all white logo.png"
+              alt="KodeCrown logo"
+              id="footLogo"
+              class="footer-link"
+            />
+          </p>
+          <p id="copyright">&copy; 2024</p>
+        </div>
+        <div>
+          <a href="../legal/user agreement.html" class="footer-link"
+            >User Agreement</a
+          >
+        </div>
+        <div>
+          <a href="../legal/privacy policy.html" class="footer-link"
+            >Privacy Policy</a
+          >
+        </div>
+        <div>
+          <a href="../legal/community guidelines.html" class="footer-link"
+            >Community Guidelines</a
+          >
+        </div>
+        <div>
+          <a href="../legal/cookie policy.html" class="footer-link"
+            >Cookie Policy</a
+          >
+        </div>
+        <div>
+          <a href="../legal/copyright policy.html" class="footer-link"
+            >Copyright Policy</a
+          >
+        </div>
+        <div>
+          <a href="../legal/send feedback.html" class="footer-link"
+            >Send Feedback</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
