@@ -110,29 +110,70 @@ h1 {
   margin-right: 30px;
 }
 
-/* email & password input field */
+/* email & password input field styling */
 .signin-input {
   margin-top: 25px;
 }
 
-#user,
-#password {
+/* Common styles for all input containers */
+.input-container {
+  position: relative;
+}
+
+.input-container .formInput {
   width: 100%;
-  height: 45px;
-  padding-left: 10px;
+  padding: 15px;
   border: 1px solid #626565;
-  border-radius: 5px;
-  font-size: 1.1rem;
+  border-radius: 4px;
+  font-size: 17.6px;
+  transition: border-color 0.3s ease;
+  outline: none;
 }
 
-#user,
-#password::placeholder {
-  font-size: 1.1rem;
+.input-container .formInput:focus {
+  border-color: #0a8e66;
+  outline-color: #0a8e66;
+}
+
+.input-container .label-wrapper {
+  position: absolute;
+  left: 13px;
+  top: 34.8%;
+  transform: translateY(-50%);
+  padding: 0 4px;
+  background-color: white;
+  color: #626565;
+  font-size: 17.6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.input-container.active .formInput:focus {
+  border-color: #0a8e66;
+  border: 2px solid #0a8e66;
+}
+
+.input-container.active .formInput:not(:focus) {
+  border-color: #626565;
+}
+
+.input-container.active .label-wrapper {
+  top: -7px;
+  left: 8px;
+  transform: translateY(0);
+  background-color: white;
+  color: #626565;
+  font-size: 14px;
+}
+
+.input-container.active .formInput:focus + .label-wrapper {
+  color: #0a8e66;
 }
 
 #user,
 #password {
-  margin-bottom: 10px;
+  margin-bottom: 21px;
 }
 
 /* password input field */
@@ -145,7 +186,7 @@ h1 {
 /* show button in password input field */
 #toggleBtn {
   position: absolute;
-  top: 41%;
+  top: 34.9%;
   font-size: 15px;
   font-weight: bold;
   color: var(--themegreen-color);

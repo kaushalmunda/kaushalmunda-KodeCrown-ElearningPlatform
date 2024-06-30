@@ -61,7 +61,7 @@ body {
 
 /* sign up container */
 .signup-container-align {
-  margin: 80px 120px 0 0;
+  margin: 40px 120px 0 0;
   display: flex;
   justify-content: center;
 }
@@ -72,7 +72,6 @@ body {
 
 .container-signup {
   width: 430px;
-  /* height: 450px; */
   padding: 20px 20px 50px 50px;
   background-color: white;
   box-shadow: 0 0 6px 1px rgba(179, 179, 179, 0.7);
@@ -114,25 +113,60 @@ h1 {
   margin-top: 25px;
 }
 
-#fname,
-#lname,
-#user,
-#password,
-#confirmPass {
+/* Common styles for all input containers */
+.input-container {
+  position: relative;
+}
+
+.input-container .formInput {
   width: 100%;
-  height: 45px;
-  padding-left: 10px;
+  padding: 15px;
   border: 1px solid #626565;
-  border-radius: 5px;
-  font-size: 1.1rem;
+  border-radius: 4px;
+  font-size: 17.6px;
+  transition: border-color 0.3s ease;
+  outline: none;
 }
 
-#fname,
-#lname,
-#user,
-#password,
-#confirmPass::placeholder {
-  font-size: 1.1rem;
+.input-container .formInput:focus {
+  border-color: #0a8e66;
+  outline-color: #0a8e66;
+}
+
+.input-container .label-wrapper {
+  position: absolute;
+  left: 13px;
+  top: 34.8%;
+  transform: translateY(-50%);
+  padding: 0 4px;
+  background-color: white;
+  color: #626565;
+  font-size: 17.6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.input-container.active .formInput:focus {
+  border-color: #0a8e66;
+  border: 2px solid #0a8e66;
+}
+
+.input-container.active .formInput:not(:focus) {
+  border-color: #626565;
+}
+
+.input-container.active .label-wrapper {
+  top: -7px;
+  left: 8px;
+  transform: translateY(0);
+  background-color: white;
+  color: #626565;
+  font-size: 14px;
+}
+
+.input-container.active .formInput:focus + .label-wrapper {
+  color: #0a8e66;
 }
 
 #fname,
@@ -140,7 +174,7 @@ h1 {
 #user,
 #password,
 #confirmPass {
-  margin-bottom: 10px;
+  margin-bottom: 21px;
 }
 
 /* password input field */
@@ -153,7 +187,7 @@ h1 {
 /* show button in password input field */
 #toggleBtn {
   position: absolute;
-  top: 41%;
+  top: 34.9%;
   font-size: 15px;
   font-weight: bold;
   color: var(--themegreen-color);
@@ -182,7 +216,7 @@ h1 {
   width: 100%;
   height: 45px;
   border-radius: 5px;
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: var(--themegreen-color);
   color: white;
   font-size: 1rem;

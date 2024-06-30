@@ -65,12 +65,18 @@
 
           <!-- email & password input field -->
           <div class="signin-input">
-            <div class="user-input">
-              <input type="email" id="user" placeholder="Email" />
+            <div class="input-container">
+              <input type="email" id="user" class="formInput" />
+              <div class="label-wrapper">
+                <label for="user" class="fieldLabel">Email</label>
+              </div>
             </div>
 
-            <div class="password-input">
-              <input type="password" id="password" placeholder="Password" />
+            <div class="input-container">
+              <input type="password" id="password" class="formInput" />
+              <div class="label-wrapper">
+                <label for="password" class="fieldLabel">Password</label>
+              </div>
               <button type="button" id="toggleBtn" onclick="togglePassword()">
                 Show
               </button>
