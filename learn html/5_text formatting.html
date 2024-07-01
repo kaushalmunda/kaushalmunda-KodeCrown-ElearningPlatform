@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML History</title>
+    <title>Text Formatting</title>
     <link rel="stylesheet" href="./learn html style.css" />
     <link
       rel="icon"
@@ -130,14 +130,14 @@
       <div class="sidebar">
         <h2>HTML Introduction</h2>
         <a target="_top" href="./1_html overview.html"> HTML Overview </a>
-        <a target="_top" href="./2_html history.html" class="active">
-          HTML History
-        </a>
+        <a target="_top" href="./2_html history.html"> HTML History </a>
         <a target="_top" href="./3_html importance.html"> HTML Importance </a>
         <a target="_top" href="./4_html structure.html"> HTML Structure </a>
         <br />
         <h2>HTML Basics</h2>
-        <a target="_top" href="./5_text formatting.html"> Text Formatting </a>
+        <a target="_top" href="./5_text formatting.html" class="active">
+          Text Formatting
+        </a>
         <a target="_top" href="./6_list types.html"> List Types </a>
         <a target="_top" href="./7_linking basics.html"> Linking Basics </a>
         <a target="_top" href="./8_media inclusion.html"> Media Inclusion </a>
@@ -157,61 +157,85 @@
 
     <div class="content-align">
       <div class="content">
-        <h1>A Brief History of HTML 1993 - Present</h1>
+        <h1>Text formatting (headings, paragraphs, emphasis)</h1>
         <div class="button-container">
           <button
             class="precedingBtn"
-            onclick="window.location.href='./1_html overview.html'"
+            onclick="window.location.href='./4_html structure.html'"
           >
             <span class="preceding-symbol">&#8249;</span> Previous</button
           ><button
             class="precedingBtn"
-            onclick="window.location.href='./3_html importance.html'"
+            onclick="window.location.href='./6_list types.html'"
           >
             Next <span class="preceding-symbol">&#8250;</span>
           </button>
         </div>
         <div class="hr"></div>
         <p>
-          The first version of HTML was written by Tim Berners-Lee in 1993.
-          Since then, there have been many different versions of HTML. The most
-          widely used version throughout the 2000's was HTML 4.01, which became
-          an official standard in December 1999.
+          The head of an HTML document is the part that is not displayed in the
+          web browser when the page is loaded. It contains information such as
+          the page &lt;title&gt;, links to CSS (if you choose to style your HTML
+          content with CSS), links to custom favicons, and other metadata (data
+          about the HTML, such as the author, and important keywords that
+          describe the document). Web browsers use information contained in the
+          head to render the HTML document correctly. In this article we'll
+          cover all of the above and more, in order to give you a good basis for
+          working with markup.
+        </p>
+        <div class="hr"></div>
+
+        <h3>Objective</h3>
+        <p>
+          To learn about the HTML head, its purpose, the most important items it
+          can contain, and what effect it can have on the HTML document.
+        </p>
+        <div class="hr"></div>
+
+        <h3>What is the HTML head?</h3>
+        <p>
+          HTMLCopy to Clipboard <br />
+          &lt;!doctype html&gt; <br />
+          &lt;html lang="en-US"&gt; <br />
+          &lt;head&gt; <br />
+          &lt;meta charset="utf-8" /&gt; <br />
+          &lt;title&gt;My test page&lt;/title&gt; <br />
+          &lt;/head&gt; <br />
+          &lt;body&gt; <br />
+          &lt;p&gt;This is my page&lt;/p&gt; <br />
+          &lt;/body&gt; <br />
+          &lt;/html&gt;
         </p>
         <p>
-          Another version, XHTML, was a rewrite of HTML as an XML language. XML
-          is a standard markup language that is used to create other markup
-          languages. Hundreds of XML languages are in use today, including GML
-          (Geography Markup Language), MathML, MusicML, and RSS (Really Simple
-          Syndication). Since each of these languages was written in a common
-          language (XML), their content can easily be shared across
-          applications. This makes XML potentially very powerful, and it's no
-          surprise that the W3C would create an XML version of HTML (again,
-          called XHTML). XHTML became an official standard in 2000, and was
-          updated in 2002. XHTML is very similar to HTML, but has stricter
-          rules. Strict rules are necessary for all XML languages, because
-          without it, interoperability between applications would be impossible.
-          You'll learn more about the differences between HTML and XHTML in Unit
-          2. Most pages on the Web today were built using either HTML 4.01 or
-          XHTML 1.0. However, in recent years, the W3C (in collaboration with
-          another organization, the WHATWG), has been working on a brand new
-          version of HTML, HTML5. Currently (2011), HTML5 is still a draft
-          specification, and is not yet an official standard. However, it is
-          already widely supported by browsers and other web-enabled devices,
-          and is the way of the future.
-        </p>
+          The HTML head is the contents of the &lt;head&gt; element. Unlike the
+          contents of the &lt;body&gt; element (which are displayed on the page
+          when loaded in a browser), the head's content is not displayed on the
+          page. Instead, the head's job is to contain metadata about the
+          document. In the above example, the head is quite small. <br /><br />
 
-        <img src="./images/1.png" alt="HTML version history table" />
+          HTMLCopy to Clipboard &lt;head&gt; <br />
+          &lt;meta charset="utf-8" /&gt; <br />
+          &lt;title&gt;My test page&lt;/title&gt; <br />
+          &lt;/head&gt;
+        </p>
+        <p>
+          In larger pages however, the head can get quite large. Try going to
+          some of your favorite websites and use the developer tools to check
+          out their head contents. Our aim here is not to show you how to use
+          everything that can possibly be put in the head, but rather to teach
+          you how to use the major elements that you'll want to include in the
+          head, and give you some familiarity. Let's get started.
+        </p>
 
         <div class="button-container">
           <button
             class="precedingBtn"
-            onclick="window.location.href='./1_html overview.html'"
+            onclick="window.location.href='./4_html structure.html'"
           >
             <span class="preceding-symbol">&#8249;</span> Previous</button
           ><button
             class="precedingBtn"
-            onclick="window.location.href='./3_html importance.html'"
+            onclick="window.location.href='./6_list types.html'"
           >
             Next <span class="preceding-symbol">&#8250;</span>
           </button>

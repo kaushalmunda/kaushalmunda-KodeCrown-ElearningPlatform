@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Tutotial</title>
+    <title>HTML Overview</title>
     <link rel="stylesheet" href="./learn html style.css" />
     <link
       rel="icon"
@@ -26,6 +26,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <script src="./learn html script.js"></script>
   </head>
   <body>
     <!-- top nav bar code -->
@@ -108,19 +110,6 @@
       </div>
     </nav>
 
-    <script>
-      const checkbox = document.getElementById("check");
-      const container = document.querySelector(".container");
-
-      checkbox.addEventListener("change", function () {
-        if (this.checked) {
-          container.style.display = "block";
-        } else {
-          container.style.display = "none";
-        }
-      });
-    </script>
-
     <!-- subtop-navbar code -->
     <nav class="subtop-navbar">
       <ul>
@@ -130,9 +119,9 @@
             ><i class="fa fa-bars"></i
           ></label>
         </div>
-        <li><a href="./1html overview.html" class="active-sub">HTML</a></li>
-        <li><a href="../learn css/1what is css.html">CSS</a></li>
-        <li><a href="../learn javascript/1what is js.html">JAVASCRIPT</a></li>
+        <li><a href="./1_html overview.html" class="active-sub">HTML</a></li>
+        <li><a href="../learn css/1_what is css.html">CSS</a></li>
+        <li><a href="../learn javascript/1_what is js.html">JAVASCRIPT</a></li>
       </ul>
     </nav>
 
@@ -140,24 +129,28 @@
       <!-- sidebar code -->
       <div class="sidebar">
         <h2>HTML Introduction</h2>
-        <a target="_top" href="./1html overview.html" class="active">
+        <a target="_top" href="./1_html overview.html" class="active">
           HTML Overview
         </a>
-        <a target="_top" href="#"> HTML History </a>
-        <a target="_top" href="#"> HTML Importance </a>
-        <a target="_top" href="#"> HTML Structure </a>
+        <a target="_top" href="./2_html history.html"> HTML History </a>
+        <a target="_top" href="./3_html importance.html"> HTML Importance </a>
+        <a target="_top" href="./4_html structure.html"> HTML Structure </a>
         <br />
         <h2>HTML Basics</h2>
-        <a target="_top" href="#"> Text Formatting </a>
-        <a target="_top" href="#"> List Types </a>
-        <a target="_top" href="#"> Linking Basics </a>
-        <a target="_top" href="#"> Media Inclusion </a>
+        <a target="_top" href="./5_text formatting.html"> Text Formatting </a>
+        <a target="_top" href="./6_list types.html"> List Types </a>
+        <a target="_top" href="./7_linking basics.html"> Linking Basics </a>
+        <a target="_top" href="./8_media inclusion.html"> Media Inclusion </a>
         <br />
         <h2>HTML Advanced</h2>
-        <a target="_top" href="#"> HTML5 Features </a>
-        <a target="_top" href="#"> Web Accessibility </a>
-        <a target="_top" href="#"> Responsive Design </a>
-        <a target="_top" href="#"> Canvas & SVG </a>
+        <a target="_top" href="./9_html5 features.html"> HTML5 Features </a>
+        <a target="_top" href="./10_web accessibility.html">
+          Web Accessibility
+        </a>
+        <a target="_top" href="./11_responsive design.html">
+          Responsive Design
+        </a>
+        <a target="_top" href="./12_canvas-svg.html"> Canvas & SVG </a>
         <br />
       </div>
     </div>
@@ -173,7 +166,7 @@
             <span class="preceding-symbol">&#8249;</span> Home</button
           ><button
             class="precedingBtn"
-            onclick="window.location.href='./2html history.html'"
+            onclick="window.location.href='./2_html history.html'"
           >
             Next <span class="preceding-symbol">&#8250;</span>
           </button>
@@ -287,7 +280,7 @@
             <span class="preceding-symbol">&#8249;</span> Home</button
           ><button
             class="precedingBtn"
-            onclick="window.location.href='./2html history.html'"
+            onclick="window.location.href='./2_html history.html'"
           >
             Next <span class="preceding-symbol">&#8250;</span>
           </button>
@@ -338,32 +331,5 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const check = document.getElementById("check");
-        const container = document.querySelector(".container");
-
-        check.addEventListener("change", () => {
-          if (window.innerWidth <= 992) {
-            container.style.display = check.checked ? "block" : "none";
-          }
-        });
-
-        // To initially hide the container if the screen width is below 992px
-        if (window.innerWidth <= 992) {
-          container.style.display = "none";
-        }
-
-        // To handle window resize event
-        window.addEventListener("resize", () => {
-          if (window.innerWidth > 992) {
-            container.style.display = "block";
-          } else {
-            container.style.display = check.checked ? "block" : "none";
-          }
-        });
-      });
-    </script>
   </body>
 </html>

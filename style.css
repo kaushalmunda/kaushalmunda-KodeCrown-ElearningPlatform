@@ -492,7 +492,6 @@ h6 {
   }
 }
 
-/* screens below 836px */
 @media (max-width: 836px) {
   #topNav-links {
     display: none;
@@ -529,7 +528,7 @@ h6 {
 
 @media (max-width: 768px) {
   .content {
-    padding: 40px 10px;
+    padding: 40px 15px;
   }
 
   .content h1 {
@@ -549,6 +548,7 @@ h6 {
   }
 
   .footer-align {
+    padding: 40px 30px;
     flex-direction: column-reverse;
     align-items: flex-start;
   }

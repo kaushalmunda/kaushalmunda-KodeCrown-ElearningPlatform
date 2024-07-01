@@ -319,7 +319,7 @@ h2 {
 }
 
 .content h3 {
-  margin-top: 30px;
+  margin-top: 25px;
   font-size: 35px;
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
@@ -329,6 +329,12 @@ h2 {
   font-size: 15px;
   line-height: 1.5;
   text-align: justify;
+  margin-bottom: 10px;
+}
+
+.content img {
+  margin: 20px 0;
+  width: 100%;
 }
 
 .content .hr {
@@ -473,6 +479,18 @@ h2 {
 
 /* for screen below 550px */
 @media (max-width: 550px) {
+  .content {
+    padding: 16px 15px 0 15px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content h3 {
+    font-size: 27px;
+  }
+
   .footer {
     flex-direction: column;
     align-items: center;
