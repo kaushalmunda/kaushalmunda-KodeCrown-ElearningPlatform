@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <script src="./index random bg.js"></script>
+    <script src="./script.js"></script>
   </head>
   <body>
     <!-- top nav bar code -->
@@ -49,10 +49,10 @@
         <div class="nav-links" id="topNav-links">
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./learn html/1html overview.html">Courses</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./courses/courses.html">Courses</a></li>
+            <li><a href="./video content/videos.html">Videos</a></li>
+            <li><a href="./about/about.html">About</a></li>
+            <li><a href="./contact/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="nav-links" id="signinBtn">
@@ -84,17 +84,17 @@
           <li class="mobActive">
             <a href="./index.html">Home</a>
           </li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#link2">Videos</a></li>
-          <li><a href="#link3">About</a></li>
-          <li><a href="#link4">Contact</a></li>
+          <li><a href="./courses/courses.html">Courses</a></li>
+          <li><a href="./video content/videos.html">Videos</a></li>
+          <li><a href="./about/about.html">About</a></li>
+          <li><a href="./contact/contact.html">Contact</a></li>
         </ul>
 
         <footer class="mobNav-footer">
           <hr class="mobNav-hr" />
-          <a href="#help">Feedback</a> &#x2022;
-          <a href="#settings">Cookies </a> &#x2022;
-          <a href="#privacy">Privacy</a>
+          <a href="#feedback-formLocator">Feedback</a> &#x2022;
+          <a href="./legal/cookies policy.html">Cookies </a> &#x2022;
+          <a href="./legal/privacy policy.html">Privacy</a>
         </footer>
         <div
           class="black-shade"
@@ -116,7 +116,39 @@
         </button>
       </div>
 
-      <div class="webdev">
+      <div class="features-container">
+        <h3>Features</h3>
+        <p>We are available with some awesome features with us</p>
+
+        <div class="features">
+          <div class="onlineCourses feature-item">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Online Courses</h2>
+            <p>
+              We offer a range of free online courses, select what interests you
+              and start learning today
+            </p>
+          </div>
+          <div class="freeVideos feature-item">
+            <i class="fa-solid fa-play"></i>
+            <h2>Free Video Lectures</h2>
+            <p>
+              Explore free video lectures, choose topics that interest you and
+              enhance your knowledge
+            </p>
+          </div>
+          <div class="certificate feature-item">
+            <i class="fa-solid fa-award"></i>
+            <h2>Certificate</h2>
+            <p>
+              Earn a Certificate upon course completion, including a final quiz
+              to validate your learning
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
         <h1>Learn web development</h1>
         <p>
           Welcome to the KodeCrown learning area. This set of articles aims to
@@ -151,14 +183,14 @@
         <p>
           HTML provides structure for web content, whereas CSS provides
           instructions to style and lay out that content. See
-          <a href="./learn html/html overview.html">HTML Overview</a> and
-          <a href="#">CSS first steps</a> for essential starter information.
+          <u>HTML Overview</u> and <u>CSS first steps</u> for essential starter
+          information.
         </p>
 
         <h3>JavaScript</h3>
         <p>
           JavaScript allows you to code interactive functionality on websites.
-          Begin with <a href="#">JavaScript first steps</a>.
+          Begin with <u>JavaScript first steps</u>.
         </p>
 
         <h3>Frameworks and tooling</h3>
@@ -180,6 +212,74 @@
           developer, along with recommended learning resources.
         </p>
       </div>
+
+      <!-- footer section -->
+      <footer class="footer-align" id="feedback-formLocator">
+        <div class="footer">
+          <div class="copy-container">
+            <p>
+              <img
+                src="./images/kodecrown logos/all white logo.png"
+                alt="KodeCrown logo"
+                id="footLogo"
+                class="footer-link"
+              />
+            </p>
+            <p id="copyright">&copy; 2024</p>
+          </div>
+          <div>
+            <a href="../legal/user agreement.html" class="footer-link"
+              >User Agreement</a
+            >
+          </div>
+          <div>
+            <a href="../legal/privacy policy.html" class="footer-link"
+              >Privacy Policy</a
+            >
+          </div>
+          <div>
+            <a href="../legal/community guidelines.html" class="footer-link"
+              >Community Guidelines</a
+            >
+          </div>
+          <div>
+            <a href="../legal/cookie policy.html" class="footer-link"
+              >Cookie Policy</a
+            >
+          </div>
+          <div>
+            <a href="../legal/copyright policy.html" class="footer-link"
+              >Copyright Policy</a
+            >
+          </div>
+
+          <div class="footNote">
+            <p>
+              <a href="./index.html">KodeCrown</a> is dedicated to providing
+              quality education through our
+              <a href="./courses/courses.html">online courses</a> and
+              <a href="./video content/videos.html">video lectures</a>. We
+              strive to empower learners worldwide with essential skills in web
+              development and beyond. Join us in exploring the world of coding
+              and unleash your potential with KodeCrown.
+            </p>
+          </div>
+        </div>
+
+        <!-- feedback form  -->
+        <div class="feedback-form">
+          <h2>Send Feedback</h2>
+          <form action="#" method="post">
+            <textarea
+              id="feedback"
+              name="feedback"
+              placeholder="Enter your feedback..."
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

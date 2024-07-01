@@ -149,7 +149,7 @@ h1 {
 
 .input-container.active .formInput:focus {
   border-color: #0a8e66;
-  border: 2px solid #0a8e66;
+  outline: 1px solid #0a8e66;
 }
 
 .input-container.active .formInput:not(:focus) {
